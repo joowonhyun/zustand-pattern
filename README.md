@@ -1,7 +1,8 @@
 # zustand 보일러 플레이트
 
-## simple Pattern Version
+## Basic Pattern Version
 
+```TypeScript
 import { create } from "zustand";
 
 interface UserState {
@@ -15,7 +16,7 @@ const useUserStore = create<UserState>((set) => ({
   age: "20",
   increaseAge: (by) => set((state) => ({ age: state.age + by })),
 }));
-
+```
 
 ## Slice Pattern Version
 
