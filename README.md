@@ -11,7 +11,7 @@ interface UserState {
   increaseAge: (by: number) => void;
 }
 
-const useUserStore = create<UserState>((set) => ({
+const useUserStore = create<UserState>()((set) => ({
   name: "홍길동",
   age: "20",
   increaseAge: (by) => set((state) => ({ age: state.age + by })),
