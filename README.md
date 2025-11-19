@@ -1,4 +1,4 @@
-# zustand 보일러 플레이트
+# Zustand Store Patterns
 
 ## Basic Pattern
 
