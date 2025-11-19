@@ -1,6 +1,6 @@
 # zustand 보일러 플레이트
 
-## Basic Pattern Version
+## Basic Pattern
 
 ```TypeScript
 import { create } from "zustand";
@@ -18,7 +18,7 @@ const useUserStore = create<UserState>()((set) => ({
 }));
 ```
 
-## Slice Pattern Version
+## Slice Pattern
 
 ```TypeScript
 import { create } from "zustand";
@@ -71,7 +71,7 @@ export default useUserStore;
 
 ```
 
-## 컴포넌트 활용
+## Usage
 ```TypeScript
 import useUserStore from "./store/useUserStore";
 import { useShallow } from "zustand/react/shallow";
