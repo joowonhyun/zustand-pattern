@@ -34,7 +34,7 @@ interface SettingSlice {
   toggleTheme: () => void;
 }
 
-// 합쳐질 최종타입 , [](미들웨어 타입), [](미들웨어 타입), 현재 슬라이스 타입
+// 합쳐질 최종타입(slice 모음), [['zustand/devtools', never]](미들웨어 타입), [](미들웨어 타입), 현재 슬라이스 타입
 const creatUserSlice: StateCreator<
   UserSlice & SettingSlice,
   [],
